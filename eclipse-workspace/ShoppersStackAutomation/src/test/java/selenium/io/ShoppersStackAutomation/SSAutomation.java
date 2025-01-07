@@ -1,9 +1,14 @@
 package selenium.io.ShoppersStackAutomation;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
+import com.shopperstack.selenium.repo.HomePage;
 import com.shopperstack.selenium.repo.LoginPage;
 import com.shopperstack.selenium.utlities.Configuration;
 
@@ -24,5 +29,30 @@ public void logintoshopperstack() throws Exception {
 	}
 	else
 		System.out.println("Login Unsuccessful?");
+}
+
+@Test(priority = 2)
+public void getMenuList()  throws Exception {
+	
+	HomePage homepage = new HomePage(driver);
+	
+	List<WebElement> menus = homepage.getmenubar();
+	
+	List<String> menuText = new ArrayList<>(); ;
+	
+	for(WebElement menuItems : menus) {
+		
+		 menuText.add(menuItems.getText());
+	}
+	
+	for(int i = 0 ; i< menuText.size() ;i++) {
+		System.out.println(menuText.get(i));
+	}
+	
+	for(WebElement menuItems : menus) {
+		
+		menuItems.click(); 
+	}
+	
 }
 }

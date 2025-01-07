@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.io.ShoppersStackAutomation.LoginToSS">
+      <class name="selenium.io.ShoppersStackAutomation.SSAutomation">
         <methods>
-          <include name="logintoshopperstack"/>
+          <include name="getMenuList"/>
+          <include name="afterClass"/>
           <include name="BrowserConfigure"/>
         </methods>
-      </class> <!-- selenium.io.ShoppersStackAutomation.LoginToSS -->
+      </class> <!-- selenium.io.ShoppersStackAutomation.SSAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
