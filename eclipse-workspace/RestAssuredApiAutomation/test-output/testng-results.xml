@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-07T12:27:14 IST" name="Default suite" finished-at="2024-05-07T12:27:16 IST" duration-ms="1776">
+    <groups>
+    </groups>
+    <test started-at="2024-05-07T12:27:14 IST" name="Default test" finished-at="2024-05-07T12:27:16 IST" duration-ms="1776">
+      <class name="restAssure.io.RestAssuredApiAutomation.Main">
+        <test-method signature="test1()[pri:0, instance:restAssure.io.RestAssuredApiAutomation.Main@306e95ec]" started-at="2024-05-07T12:27:14 IST" name="test1" finished-at="2024-05-07T12:27:15 IST" duration-ms="1347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:restAssure.io.RestAssuredApiAutomation.Main@306e95ec]" started-at="2024-05-07T12:27:15 IST" name="test2" finished-at="2024-05-07T12:27:16 IST" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- restAssure.io.RestAssuredApiAutomation.Main -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

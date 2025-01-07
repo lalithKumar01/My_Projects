@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.com.experitest.stae.support</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>support_data.zip</name>
+			<type>1</type>
+			<location>C:/Users/www.abcom.in/Downloads/Eclipse_Plugin_Support_Data_Tue May 30 13_13_57 IST 2023.zip</location>
+		</link>
+	</linkedResources>
+</projectDescription>
