@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="AppiumST"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="RestAssuredApiAutomation"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
     <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
     <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
-        <listEntry value="com.experitest.auto.BaseTest"/>
-        <listEntry value="demo.io.AppiumST.App"/>
-        <listEntry value="com.experitest.auto.IOSDemoTest"/>
-        <listEntry value="demo.io.AppiumST.AppiumTest"/>
-        <listEntry value="io.appium.java_client.touch.TouchActions"/>
-        <listEntry value="com.experitest.auto.AndroidDemoTest"/>
+        <listEntry value="restAssure.io.RestAssuredApiAutomation.App"/>
+        <listEntry value="restAssure.io.RestAssuredApiAutomation.Main"/>
+        <listEntry value="restAssure.io.RestAssuredApiAutomation.BasicTestCase"/>
     </listAttribute>
     <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
     <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
