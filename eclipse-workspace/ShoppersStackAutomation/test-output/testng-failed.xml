@@ -5,7 +5,7 @@
     <classes>
       <class name="selenium.io.ShoppersStackAutomation.SSAutomation">
         <methods>
-          <include name="getMenuList"/>
+          <include name="addToCart"/>
           <include name="afterClass"/>
           <include name="BrowserConfigure"/>
         </methods>

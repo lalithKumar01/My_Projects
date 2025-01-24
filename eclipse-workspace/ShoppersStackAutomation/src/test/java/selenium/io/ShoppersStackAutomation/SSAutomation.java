@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,8 @@ import com.shopperstack.selenium.repo.LoginPage;
 import com.shopperstack.selenium.utlities.Configuration;
 
 public class SSAutomation extends Configuration {
+	
+	Actions actions ;
 @Test(priority = 1)
 public void logintoshopperstack() throws Exception {
 	LoginPage login = new LoginPage(driver);
@@ -48,11 +51,44 @@ public void getMenuList()  throws Exception {
 	for(int i = 0 ; i< menuText.size() ;i++) {
 		System.out.println(menuText.get(i));
 	}
-	
-	for(WebElement menuItems : menus) {
-		
-		menuItems.click(); 
-	}
+	 actions = new Actions(driver);
+	actions.clickAndHold(menus.get(0)).perform();
+	 if(homepage.getTopwere().isDisplayed()) {
+		 System.out.println("Men Section is displayed");
+	 }
+	 else
+		 System.out.println("Men Section is not found");
 	
 }
+ 
+@Test(priority = 3)
+
+public void addToCart() throws Exception {
+	
+	actions = new Actions(driver);
+	HomePage homepage = new HomePage(driver);
+	
+	homepage.getMenShirtSection().click();
+	
+	Thread.sleep(5000);
+	
+	assert homepage.getRoadsterShirt().isDisplayed() : "Roadster shirt is not displayed";
+	
+    homepage.getAddToCartButton().click();
+    
+    homepage.getCartPage().click();
+    
+    if(homepage.getAddedRoadsterAhirt().isDisplayed()) {
+    	
+    	System.out.println("Added item is displayed");
+    	
+    }
+    else 
+    	
+    	System.out.println("Added item is not displayed");
+    
+    
+	
+}
+
 }
