@@ -17,7 +17,7 @@ public class SSAutomation extends Configuration {
 	
 	Actions actions ;
 @Test(priority = 1)
-public void logintoshopperstack() throws Exception {
+public void logintoshopperstack() throws Exception {  
 	LoginPage login = new LoginPage(driver);
 	driver.get(fileutils.getCredentialsFromProprities("url"));
 	//WebElement logo = driver.findElement(By.xpath("//a[@id='home']"));

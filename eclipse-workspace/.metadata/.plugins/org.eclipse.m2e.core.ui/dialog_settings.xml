@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/mipl/Documents/GitHub/My_Projects/eclipse-workspace/ShoppersStackAutomation/src/main/java/com/shopperstack/selenium/repo/HomePage.java"/>
 			<item value="C:\Users\www.abcom.in\eclipse-workspace\SmarTam\src\test\java\resource\app-release.apk"/>
 			<item value="C:\Users\www.abcom.in\eclipse-workspace\demo\src\demo\A1.java"/>
 		</list>
@@ -27,10 +28,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="task.task_selenium"/>
 		</list>
 		<list key="groupId">
+			<item value="task"/>
 		</list>
 		<list key="artifactId">
+			<item value="task_selenium"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
